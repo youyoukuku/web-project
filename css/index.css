@@ -1,0 +1,344 @@
+
+.main{
+	position: relative;
+
+}
+.navigation-panel{
+	margin: 0px;
+	width: 100%;
+	height: 180px;
+	background-image: url(../img/psc2.PNG);
+	background-repeat:;
+}
+/*流星js*/
+ .star {
+     position: absolute;
+     opacity: 0;
+     z-index: 10000;
+ }
+ 
+ .star::after {
+     content: "";
+     display: block;
+     border: solid;
+     border-width: 2px 0 2px 80px;
+     /*流星随长度逐渐缩小*/
+     border-color: transparent transparent transparent rgba(255, 255, 255, 1);
+     border-radius: 2px 0 0 2px;
+     transform: rotate(-45deg);
+     transform-origin: 0 0 0;
+     box-shadow: 0 0 20px rgba(255, 255, 255, .3);
+ }
+.info{
+	position: relative;
+	margin-left: 100px;
+	padding-top: 40px;
+	width: 500px;
+	height: 200px;
+	box-sizing: border-box;
+	
+}
+
+.info-icon img{
+	border-radius: 60px;
+	width: 120px;
+	height: 120px;
+	margin-left: 0px;
+}
+
+.info .info-name{
+	position: absolute;
+	top: 60px;
+	left: 140px;
+	font-size: 40px;
+	color: white;
+}
+.info .info-sign{
+	position: absolute;
+	top: 110px;
+	left: 180px;
+	font-size: 28px;
+	border-bottom: 1px red solid;
+	font-family: "franklin gothic medium cond";
+}
+.navigation{
+	position: relative;
+	height: 50px;
+	width: 100%;
+	/*background-color: lightgreen;*/
+	box-sizing: border-box;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: #20647d;
+}
+
+.navigation-select{
+	position: relative;
+	margin-left: 80px;
+
+}
+.navigation-name{
+	display: inline;
+	margin-left: 30px;
+	font-size: 26px;
+	font-family: "bodoni mt condensed";
+	color: #ffffff;
+	padding: 10px;
+	padding-top: 13px;
+}
+.navigation-name:hover{
+	/*font-size: 20px;*/
+	background-color: white;
+	transition: 1s;
+	opacity: 0.5;
+	color: #000000;
+	border-top: 2px #DEB887 solid;
+}
+.navigation-search{
+	display: inline-block;
+	margin-left: 150px;
+}
+.navigation-value:hover{
+	border-color: #aa0000;
+}
+.navigation-name input{
+	padding-top: 0px;
+	width: 100px;
+	border-radius: 8px;
+}
+button{
+	background-color: #9ACD32;
+	color: white;
+}
+.content{
+	position: relative;
+	width: 100%;
+	height: 1060px;
+	padding-top: 10px;
+	/*background-color: chocolate;*/
+	/*background-image: url(../img/preview.jpg);*/
+	background-repeat: no-repeat;
+	opacity: ;
+	margin-bottom: 0px;
+}
+.content .content-realase{
+	display: inline-block;
+	/*background-color: chocolate;*/
+	width: 700px;
+	height: 800px;
+	margin-left: 90px;
+}
+.content .content-technology{
+	position: absolute;
+	/*background-color: burlywood;*/
+	margin-right: 0px;
+	padding-left: 50px;
+	width: 300px;
+	height: 500px;
+	top: 10px;
+	left: 900px;
+	text-align: center;
+	opacity: ;
+}
+.content .content-link{
+	position: absolute;
+	background-color: #ffaa7f;
+	margin-top: 20px;
+	width: 300px;
+	height: 120px;
+	top: 580px;
+	left: 880px;
+	text-align: center;
+}
+.slideshow img{
+	position: relative;
+	width: 500px;
+	height: 260px;
+	opacity: ;
+	transform: rotateX('180');
+}
+.slideshow .about{
+	position: absolute;
+	top: 10px;
+	width: 200px;
+	height: 185px;
+	background-color: #ffaaff;
+	text-align: center;
+	padding-top: 75px;
+	left: 620px;
+}
+.slideshow .about :hover{
+	color: red;
+}
+.hr{
+	border-color: black;
+	line-height: 500px;
+}
+.program-design{
+	width: 150px;
+	height: 60px;
+	margin-top: 10px;
+	text-align: center;
+	vertical-align: middle;
+	padding-top: 25px;
+	font-size: 24px;
+}
+.value1{
+	background-color: green;
+	vertical-align: middle;
+}
+.value2{
+	background-color: yellow;
+	vertical-align: middle;
+}
+.value3{
+	background-color: yellowgreen;
+	vertical-align: middle;
+}
+.value4{
+	background-color: lightgreen;
+	vertical-align: middle;
+}
+.link-address{
+	margin-left: 0px;
+	margin-bottom: 5pxs;
+}
+
+
+
+footer{
+	position:absolute;
+	background-color: #00005B;
+}
+footer .row{
+	position: relative;
+	text-align: center;
+	line-height: 50px;
+	color: #00005b;
+	font-size: 28px;
+	background-color: #00005B;
+}
+
+
+/*满天星*/
+audio{
+    z-index: 5;
+    position: absolute;
+    bottom: 0;
+    opacity: 0.1;
+    -webkit-transition: all 2s;
+    -moz-transition: all 2s;
+    -ms-transition: all 2s;
+    -o-transition: all 2s;
+    transition: all 2s;
+}
+audio:hover{
+    opacity: 1;
+}
+.wall{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+#background{
+    background: url("../img/preview.jpg")no-repeat;
+    -webkit-animation: dd 100s linear infinite;
+    -moz-animation: dd 100s linear infinite;
+    -o-animation: dd 100s linear infinite;
+    animation: dd 100s linear infinite;
+    background-size: cover;
+	height: 100%;
+}
+#midground{
+    background: url("../img/midground.png");
+    z-index: 1;
+    -webkit-animation: cc 100s linear infinite;
+    -moz-animation: cc 100s linear infinite;
+    -o-animation: cc 100s linear infinite;
+    animation: cc 100s linear infinite;
+}
+#foreground{
+    background: url("../img/foreground.png");
+    z-index: 2;
+    -webkit-animation: cc 153s linear infinite;
+    -o-animation: cc 153s linear infinite;
+    -moz-animation: cc 153s linear infinite;
+    animation: cc 153s linear infinite;
+}
+#top{
+    background: url("../img/midground.png");
+    z-index: 4;
+    -webkit-animation: dd 100s linear infinite;
+    -o-animation: dd 100s linear infinite;
+    animation: da 100s linear infinite;
+}
+@-webkit-keyframes cc {
+    from{
+        background-position: 0 0;
+        transform: translateY(10px);
+    }
+    to{
+        background-position: 600% 0;
+    }
+}
+@-o-keyframes cc {
+    from{
+        background-position: 0 0;
+        transform: translateY(10px);
+    }
+    to{
+        background-position: 600% 0;
+    }
+}
+@-moz-keyframes cc {
+    from{
+        background-position: 0 0;
+        transform: translateY(10px);
+    }
+    to{
+        background-position: 600% 0;
+    }
+}
+@keyframes cc {
+    0%{
+        background-position: 0 0;
+    }
+    100%{
+        background-position: 600% 0;
+    }
+}
+
+@keyframes da {
+    0%{
+        background-position: 0 0;
+    }
+    100%{
+        background-position: 0 600%;
+    }
+}
+@-webkit-keyframes da {
+    0%{
+        background-position: 0 0;
+    }
+    100%{
+        background-position: 0 600%;
+    }
+}
+@-moz-keyframes da {
+    0%{
+        background-position: 0 0;
+    }
+    100%{
+        background-position: 0 600%;
+    }
+}
+@-ms-keyframes da {
+    0%{
+        background-position: 0 0;
+    }
+    100%{
+        background-position: 0 600%;
+    }
+}
